@@ -16,7 +16,6 @@
         // Các thông tin khác về phòng có thể in ra ở đây
     }
     ?>
-
 </body>
 
 </html>
