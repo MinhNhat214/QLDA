@@ -1,21 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang List_room</title>
-</head>
-
-<body>
-    <!-- Trong file List_Room.php -->
-    <?php
-    foreach ($data['list'] as $room) {
-        echo $room['room_id'].'</br>';
-        // Thay 'room_id' bằng tên trường dữ liệu mà bạn muốn hiển thị
-        // Các thông tin khác về phòng có thể in ra ở đây
-    }
-    ?>
-</body>
-
-</html>
+<div class="container">
+    <hr>
+    <table class="table">
+        <thead class="table-info">
+            <tr>
+                <th>Dạng phòng</th>
+                <th>Số khách</th>
+                <th>Giá phòng/đêm</th>
+                <th>Số phòng</th>
+                <th>Đặt phòng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($data['list'] as $item) : ?>
+                <tr>
+                    <td><?php echo $item['room_id'] ?></td>
+                    <td>
+                        <select class="form-select" id="validationTooltip04" required="">
+                            <!-- <option selected="" disabled="" value="">Số khách</option> -->
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </td>
+                    <td><?php echo $item['price_per_night'] ?> </td>
+                    <td><?php echo $item['room_number'] ?> </td>
+                    <td><button class="btn btn-success btn-sm" type="submit">Đặt ngay</button></td>
+                </tr>
+            <?php endforeach;
+            ?>
+        </tbody>
+    </table>
+</div>

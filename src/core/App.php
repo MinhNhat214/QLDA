@@ -5,13 +5,12 @@ class App
     protected $action = "show";
     protected $params = [];
 
-    //http://localhost/baitapcuaNhat/QLDA/Home/sayhi/1/2/3
+    //http://localhost/baitapcuaNhat/QLDA/Home/show/1/2/3
     
     function __construct()
     {
-        // Array ( [0] => Home [1] => sayhi [2] => 1 [3] => 2 [4] => 3 )
+        // Array ( [0] => Home [1] => show [2] => 1 [3] => 2 [4] => 3 )
         $arr = $this->urlProcess();
-        
         //Xử lí controller
         if (isset($arr[0]) && file_exists("src/Controller/".$arr[0].".php")) {
             $this->controller = $arr[0];
