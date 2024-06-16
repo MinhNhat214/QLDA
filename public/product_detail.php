@@ -1,1 +1,0 @@
-"<?php // Product Detail ?>" 
