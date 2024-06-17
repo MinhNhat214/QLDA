@@ -9,7 +9,7 @@
                 <div class="col-4">
                     <label for="fromDate">Từ ngày:</label>
                     <div class="input-group date" id="fromDate">
-                        <input type="text" class="form-control" name="from_date" placeholder="Chọn ngày bắt đầu" required>
+                        <input type="date" class="form-control" name="from_date" placeholder="Chọn ngày bắt đầu" required>
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                         </div>
@@ -18,7 +18,7 @@
                 <div class="col-4">
                     <label for="toDate">Đến ngày:</label>
                     <div class="input-group date" id="toDate">
-                        <input type="text" class="form-control" name="to_date" placeholder="Chọn ngày kết thúc" required>
+                        <input type="date" class="form-control" name="to_date" placeholder="Chọn ngày kết thúc" required>
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                         </div>

@@ -5,7 +5,7 @@ class RoomModel extends DBInteraction
     public function getRoom()
     {
         $getRaw = $this->getRaw('SELECT * FROM rooms');
-        if ($getRaw) {
+        if ($getRaw){
             return $getRaw;
         } else {
             return [];
@@ -23,10 +23,4 @@ class RoomModel extends DBInteraction
     //     $get_type = $this->oneRaw('SELECT * FROM rooms WHERE room_id = :room_id',$params);
     //     return $get_type;
     // }
-
-    public function BookNow(){
-        if($this->isPost()){
-            $this->redirect($path='BookNow');
-        }
-    }
 }
