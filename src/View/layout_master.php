@@ -50,6 +50,8 @@
     <?php
     require_once 'src/View/Pages/' . $data['page'] . '.php'
     ?>
+
+    <!-- Footer -->
     <!-- <div class="container"> -->
     <footer class="py-5 container">
         <div class="row">
