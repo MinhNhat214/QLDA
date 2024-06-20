@@ -62,12 +62,12 @@ class DBInteraction
     //Lay 1 hàng dữ liệu
     function oneRaw($sql, $params=[])
     {
-        $kq = $this->query($sql, $params, false);
+        $kq = $this->query($sql, $params, true);
         if (is_object($kq)) {
             // lấy một hàng dữ liệu từ kết quả của một truy vấn SQL
             $dataFetch = $kq->fetch(PDO::FETCH_ASSOC);
         }
-        return isset($dataFetch) ? $dataFetch : 'ko thanh cong';
+        return isset($dataFetch) ? $dataFetch : 'false';
     }
     //Lay nhieu hang du lieu
     public function getRaw($sql,$params=[])

@@ -11,19 +11,18 @@
     </div>
 </div>
 <div class="container">
-    <?php echo $data['from_date'].'<br>' ?>
-    <?php echo $data['to_date'].'<br>'?>
-    <?php echo $data['guest_count'].'<br>'?>
-
     <?php foreach ($data['list'] as $item) : ?>
         <form action="RoomDetail" method="post" class="row mb-1">
             <div class="card">
+                <input type="number" name="room_type_id" value="<?php echo $item['room_type_id']?>">
                 <div class="row g-0">
                     <div class="col-7 col-sm-8">
                         <div class="card-body">
-                            <p><?php echo $item['room_type_id'] ?></p>
+                            <input type="text" name="type_name" value="<?php echo $item['type_name'] ?>">
                             <h3 class="mb-0">Phòng cao cấp</h3>
-                            <div class="mb-1 text-body-secondary">Giá: 2,5 triệu/ngày</div>
+                            <div class="mb-1 text-body-secondary">
+                                <input type="number" name="base_price" value="<?php echo $item['base_price'] ?>">
+                            </div>
                             <p class="card-text mb-auto">Kích cở: 30m2</p>
                             <p class="card-text mb-auto">Phòng tối đa: 3 người</p>
                             <p class="card-text mb-auto">Dịch vụ: TV, WIFI, Phòng Tắm,...</p>

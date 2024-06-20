@@ -11,13 +11,7 @@ class ReservationModel extends DBInteraction
             return [];
         }
     }
-    public function getRoomID($roomId)
-    {
-        // $getRoomID = $this->getRaw('SELECT * FROM rooms WHERE room_id = :room_id');
-        $params =['room_id'=>$roomId];
-        $getRoomID = $this->getRaw('SELECT * FROM rooms WHERE room_id = :room_id',$params,true);
-        return $getRoomID;
-    }
+    
      
     // public function getRoomDetail($roomId)
     // {

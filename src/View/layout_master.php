@@ -45,6 +45,7 @@
         <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary me-2">Đăng nhập</button>
             <button type="button" class="btn btn-primary">Đăng ký</button>
+            <a href="Logout">Đăng xuất</a>
         </div>
     </header>
     <?php
@@ -53,6 +54,7 @@
 
     <!-- Footer -->
     <!-- <div class="container"> -->
+        
     <footer class="py-5 container">
         <div class="row">
             <div class="col-6 col-md-2 mb-3">
