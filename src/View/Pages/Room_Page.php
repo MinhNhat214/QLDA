@@ -12,16 +12,33 @@
 </div>
 <div class="container">
     <?php foreach ($data['list'] as $item) : ?>
-        <form action="RoomDetail" method="post" class="row mb-1">
+        <form class="d-flex justify-content-center" action="RoomDetail" method="post" class="row mb-1">
             <div class="card">
-                <input type="number" name="room_type_id" value="<?php echo $item['room_type_id']?>">
+                <input type="hidden" name="room_type_id" value="<?php echo $item['room_type_id'] ?>">
                 <div class="row g-0">
                     <div class="col-7 col-sm-8">
                         <div class="card-body">
-                            <input type="text" name="type_name" value="<?php echo $item['type_name'] ?>">
-                            <h3 class="mb-0">Phòng cao cấp</h3>
+                            <input type="text" name="type_name" value="<?php echo $item['type_name'] ?>"  readonly style="border: none; 
+                  background: none; 
+                  font-size: 30px;
+                  font-weight: bold; 
+                  line-height: 1.5; 
+                  padding: 0; 
+                  margin: 0; 
+                  color: #212529; 
+                  outline: none; 
+                  cursor: default;">
                             <div class="mb-1 text-body-secondary">
-                                <input type="number" name="base_price" value="<?php echo $item['base_price'] ?>">
+                                <input type="number" name="base_price" value="<?php echo $item['base_price'] ?>" readonly style="border: none; 
+                  background: none; 
+                  font-size: 30px;
+                  font-weight: bold; 
+                  line-height: 1.5; 
+                  padding: 0; 
+                  margin: 0; 
+                  color: #212529; 
+                  outline: none; 
+                  cursor: default;">
                             </div>
                             <p class="card-text mb-auto">Kích cở: 30m2</p>
                             <p class="card-text mb-auto">Phòng tối đa: 3 người</p>
@@ -32,8 +49,8 @@
                         </div>
                     </div>
                     <div class="col-5 col-sm-4">
-                        <div lass="img-fluid w-100" alt="card-horizontal-image"><?php echo $item['image_url'] ?></div>
-                        <!-- <img src="public/images/home-room/hr-1.jpg" class="img-fluid w-100" alt="card-horizontal-image"> -->
+                        <div lass="img-fluid w-100" alt="card-horizontal-image"></div>
+                        <img src="public/images/home-room/hr-1.jpg" class="img-fluid w-100" alt="card-horizontal-image">
                     </div>
                 </div>
             </div>

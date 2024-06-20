@@ -14,16 +14,16 @@ class Booking extends Router
                 exit();
             }
         }
-        echo $_SESSION['customer_id'] . '<br>';
+        // echo $_SESSION['customer_id'] . '<br>';
 
-        echo $_SESSION['full_name'] . '<br>';
+        // echo $_SESSION['full_name'] . '<br>';
 
-        echo $_SESSION['email'] . '<br>';
-        echo $_SESSION['login_status'] . '<br>';
-        echo $_SESSION['room_number'] . '<br>';
-        echo $_SESSION['from_date'] . '<br>';
-        echo $_SESSION['to_date'] . '<br>';
-        echo $_SESSION['guest_count'] . '<br>';
+        // echo $_SESSION['email'] . '<br>';
+        // echo $_SESSION['login_status'] . '<br>';
+        // echo $_SESSION['room_number'] . '<br>';
+        // echo $_SESSION['from_date'] . '<br>';
+        // echo $_SESSION['to_date'] . '<br>';
+        // echo $_SESSION['guest_count'] . '<br>';
         // exit();
         // $getInfCustomer = $this-> Model('CustomerModel');
         // $getCusInf = $getInfCustomer -> infCusOnId();

@@ -20,25 +20,17 @@
 
 <body>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <!-- <div class="col-md-3 mb-2 mb-md-0">
-                
-                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <svg class="bi" width="40" height="32" role="images" aria-label="Bootstrap">
-                        <use xlink:href="public/images/logo-black.png"></use>
-                    </svg>
-                </a>
-            </div> -->
         <div class="col-md-3 mb-2 mb-md-0">
-            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <p style='font-weight: bold; color:#FF8A08; margin-bottom:0px;'>SUNHOUSE</p>
+            <!-- <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
                 <img class="bi" width="70" height="50" role="img" aria-label="Bootstrap" src="public/images/logo-black.png" alt="" srcset="">
-                <!-- <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg> -->
-            </a>
+
+            </a> -->
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="Home" class="nav-link px-2">Home</a></li>
-            <li><a href="Room" class="nav-link px-2">Room</a></li>
+            <li><a href="Home" class="nav-link px-2">Trang chủ</a></li>
+            <li><a href="Room" class="nav-link px-2">Tin tức</a></li>
+            <li><a href="Room" class="nav-link px-2">Bài viết</a></li>
             <li><a href="AboutUs" class="nav-link px-2">Về chúng tôi</a></li>
         </ul>
 
@@ -55,10 +47,19 @@
     <!-- Footer -->
     <!-- <div class="container"> -->
         
+
     <footer class="py-5 container">
         <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
+            <div class="col-4 ">
+                <h5>Liên hệ</h5>
+                <ul class="nav flex-column">
+                    <p>0123 *** 789</p>
+                    <p>32 Nguyễn Bỉnh Khiêm, Phường 01, <br> Gò Vấp, Hồ Chí Minh 70000, Việt Nam</p>
+
+                </ul>
+            </div>
+            <div class="col-4">
+                <h5>Liên kết nhanh</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
@@ -68,36 +69,14 @@
                 </ul>
             </div>
 
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-5 offset-md-1 mb-3">
+            <div class="col-4">
                 <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <h5>Liên hệ với chúng tôi</h5>
+                    <p>Nhận thông báo về sự kiện hàng tháng</p>
+                    <div class="">
                         <label for="newsletter1" class="visually-hidden">Email address</label>
                         <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
+                        <button class="btn btn-primary" style="float:right; margin-top: 15px;" type="button">Subscribe</button>
                     </div>
                 </form>
             </div>

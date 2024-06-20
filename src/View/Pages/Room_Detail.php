@@ -4,11 +4,12 @@
     </div>
 </div>
 <section class="room-details spad container">
-    <div class="row" style="border: 1px solid black;">
+    <div class="row" style="">
         <div class="col-8  mt-5 mb-5">
-            <?php echo $data['type_name'] . '<br>' ?>
-
-            <h2>Hình ảnh</h2>
+            <h2><?php echo $data['type_name'] . '<br>' ?>
+            </h2>
+            
+            <!-- <h2>Hình ảnh</h2> -->
             <img src="public/images/rooms/details/rd-1.jpg" alt="" srcset="">
             <img src="public/images/rooms/details/rd-2.jpg" alt="" srcset="">
             <div class="room__details__desc">
@@ -100,32 +101,49 @@
         <div class="col-4">
             <div class="row">
                 <form action="Booking" method="post">
-                    <?php echo $data['room_type_id'] . '<br>' ?>
+                    <input type="hidden" name="" value="<?php echo $data['room_type_id'] . '<br>' ?>">
+                    
                     <table class="table">
                         <thead>
-                            <tr>THÔNG TIN ĐẶT PHÒNG</tr>
+                            <tr>
+                                <p style="font-size: 25px; text-align:center; margin: 50px 0px 20px 0px;">THÔNG TIN ĐẶT PHÒNG</p></tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Từ ngày</td>
                                 <td>
-                                    <input type="text" name="from_date" id="" value="<?php echo $_SESSION['from_date']; ?>">
+                                    <input type="text" name="from_date" id="" value="<?php echo $_SESSION['from_date']; ?>" readonly style="border: none; 
+                  background: none; 
+                  font-size: 18px;
+                  text-align:right;
+                  line-height: 1.5; 
+                  padding: 0; 
+                  margin: 0; 
+                  color: #212529; 
+                  outline: none; 
+                  cursor: default;">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Đến ngày </td>
                                 <td>
-                                    <input type="text" name="to_date" id="" value="<?php echo $_SESSION['to_date']; ?>">
+                                    <input type="text" name="to_date" id="" value="<?php echo $_SESSION['to_date']; ?>" readonly style="border: none; 
+                  background: none; 
+                  font-size: 18px;
+                  text-align:right;
+                  line-height: 1.5; 
+                  padding: 0; 
+                  margin: 0; 
+                  color: #212529; 
+                  outline: none; 
+                  cursor: default;">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Số phòng</td>
                                 <td>
                                     <?php $current_room_type_id = $data['room_type_id']; ?>
-                                    <?php echo 'current: ' ?>
-                                    <?php print_r($current_room_type_id) ?>
-
-                                    <select name="room_number" class="form-select" aria-label="Default select">
+                                    <select style="float:right" name="room_number" class="form-select" aria-label="Default select">
                                         <?php foreach ($data['getinerroomtype'] as $item) : ?>
                                             <?php if ($item['room_type_id'] == $current_room_type_id) : ?>
                                                 <option value="<?php echo $item['room_number']; ?>">
@@ -138,7 +156,16 @@
                             </tr>
                             <tr>
                                 <td>Số Khách</td>
-                                <td><input type="text" name="guest_count" id="" value="<?php echo $_SESSION['guest_count'] ?>"></td>
+                                <td><input type="text" name="guest_count" id="" value="<?php echo $_SESSION['guest_count'] ?>" readonly style="border: none; 
+                  background: none; 
+                  font-size: 18px;
+                  text-align:right;
+                  line-height: 1.5; 
+                  padding: 0; 
+                  margin: 0; 
+                  color: #212529; 
+                  outline: none; 
+                  cursor: default;"></td>
                             </tr>
                             <!-- <tr>
                             <td>Giá phòng/1 đêm</td>
@@ -150,8 +177,8 @@
                         </tr> -->
                         </tbody>
                     </table>
-                    <button type="submit" class="btn btn-warning" style="border: 1px solid black;">
-                        Đăng nhập
+                    <button style="float:right" type="submit" class="btn btn-warning" style="border: 1px solid black;">
+                        Đặt ngay
                     </button>
                 </form>
             </div>

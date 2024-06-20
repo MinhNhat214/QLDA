@@ -1,15 +1,6 @@
 <div class="my-5" style="background-image: url(public/images/hero.jpg);">
     <div class="p-5 text-center rounded-3">
-        <!-- <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100">
-            <use xlink:href="#bootstrap"></use>
-        </svg> -->
         <h1 class="text-white" style="padding: 100px">VỀ CHÚNG TÔI</h1>
-
-        <!-- <div class="d-inline-flex gap-2 mb-5">
-            <div class="row check-availabilty" id="next">
-                <div class="block-32 aos-init aos-animate" data-aos="fade-up" data-aos-offset="-200"></div>
-            </div>
-        </div> -->
     </div>
 </div>
 <section class="about spad">

@@ -2,15 +2,15 @@
 require_once "src/core/DBInteraction.php";
 class ReservationModel extends DBInteraction
 {
-    public function getRoom()
-    {
-        $getRoom = $this->getRaw('SELECT * FROM rooms');
-        if ($getRoom) {
-            return $getRoom;
-        } else {
-            return [];
-        }
-    }
+    // public function getRoom()
+    // {
+    //     $getRoom = $this->getRaw('SELECT * FROM rooms');
+    //     if ($getRoom) {
+    //         return $getRoom;
+    //     } else {
+    //         return [];
+    //     }
+    // }
     
      
     // public function getRoomDetail($roomId)
